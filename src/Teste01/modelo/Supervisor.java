@@ -1,4 +1,4 @@
-package Teste01.modelos;
+package Teste01.modelo;
 
 public class Supervisor extends Colaborador {
     public Supervisor() {
@@ -16,11 +16,11 @@ public class Supervisor extends Colaborador {
     @Override
     public String toString() {
         return "Supervisor{" +
-                "nome='" + getNome() +
-                ", idade=" + getIdade() +
-                ", salario=" + getSalario() +
-                ", grauInstrucao=" + getGrauInstrucao() +
-                ", bonificacao=" + bonificacao() +
+                "Nome = '" + getNome() + "'" +
+                ", Idade = " + getIdade() +
+                ", Salário = " + String.format("%.2f",getSalario()) +
+                ", Grau de Instrução = " + getGrauInstrucao() +
+                ", Bonificação = " + String.format("%.2f",bonificacao()) +
                 "}";
     }
 }

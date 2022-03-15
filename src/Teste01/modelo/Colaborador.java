@@ -1,4 +1,4 @@
-package Teste01.modelos;
+package Teste01.modelo;
 
 public abstract class Colaborador {
     private String nome;
@@ -55,10 +55,10 @@ public abstract class Colaborador {
     @Override
     public String toString() {
         return "Colaborador{" +
-                "nome='" + nome + '\'' +
+                "nome='" + nome + "'" +
                 ", idade=" + idade +
                 ", salario=" + salario +
                 ", grauInstrucao=" + grauInstrucao +
-                '}';
+                "}";
     }
 }
