@@ -2,13 +2,20 @@ package Teste02;
 
 import java.util.Scanner;
 
+/**
+ * Teste 2
+ * <p>
+ * Ler valor inteiro com mínimo de 3 dígitos e mostrar quantidade de dígitos ímpares
+ *
+ * @author Luis Carlos Zancanela
+ */
 public class NumerosImpares {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int digito, numero, numerosImpares=0;
         boolean continua = true;
         do {
-            System.out.println("Digite um número inteiro para verificar quais dígitos são ímpares:");
+            System.out.print("Digite um número inteiro (mínimo 3 dígitos): ");
             numero = input.nextInt();
             if (numero < 100) {
                 System.out.println("Para funcionar deve-se informar no mínimo 3 dígitos.");
