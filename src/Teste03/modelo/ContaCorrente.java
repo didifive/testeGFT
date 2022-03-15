@@ -1,4 +1,4 @@
-package Teste03.modelos;
+package Teste03.modelo;
 
 public class ContaCorrente extends Conta{
     public ContaCorrente() {
@@ -18,8 +18,8 @@ public class ContaCorrente extends Conta{
         return "Conta Corrente {" +
                 "Número = " + getNumero() +
                 ", Titular = '" + getTitular() + "'" +
-                ", Saldo = " + getSaldo() +
-                ", Rendimento mensal = " + rendimento() +
+                ", Saldo = " + String.format("%.2f",getSaldo()) +
+                ", Rendimento mensal = " + String.format("%.2f",rendimento()) +
                 "}";
     }
 }

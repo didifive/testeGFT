@@ -1,4 +1,4 @@
-package Teste03.modelos;
+package Teste03.modelo;
 
 public abstract class Conta {
     private int numero;

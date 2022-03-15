@@ -1,4 +1,4 @@
-package Teste03.modelos;
+package Teste03.modelo;
 
 public class ContaPoupanca extends Conta{
     public ContaPoupanca() {
@@ -18,8 +18,8 @@ public class ContaPoupanca extends Conta{
         return "Conta Poupança {" +
                 "Número = " + getNumero() +
                 ", Titular = '" + getTitular() + "'" +
-                ", Saldo = " + getSaldo() +
-                ", Rendimento mensal = " + rendimento() +
+                ", Saldo = " + String.format("%.2f",getSaldo()) +
+                ", Rendimento mensal = " + String.format("%.2f",rendimento()) +
                 "}";
     }
 }
